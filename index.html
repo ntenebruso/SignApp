@@ -10,9 +10,14 @@
     <body>
         <h1>SignApp</h1>
 
-        <div class="output">
-        
+        <button id="enable-webcam-btn" disabled>loading...</button>
+
+        <div style="position: relative">
+            <video id="webcam" autoplay></video>
+            <canvas id="output-canvas" style="position:absolute;left:0;top:0;" width="1280" height="720"></canvas>
         </div>
+
+        <div id="gesture-output"></div>
 
         <div id="app"></div>
         <script type="module" src="/src/main.ts"></script>
