@@ -27,6 +27,7 @@ async function createGestureRecognizer() {
         numHands: 2
     });
     enableWebcamButton.innerText = "Enable webcam";
+    enableWebcamButton.disabled = false;
 }
 
 createGestureRecognizer();
@@ -37,7 +38,6 @@ function hasUserMedia() {
 
 if (hasUserMedia()) {
     enableWebcamButton.addEventListener('click', enableWebcam);
-    enableWebcamButton.disabled = false;
 } else {
     console.warn('getUserMedia is not supported on this device');
 }

@@ -12,9 +12,9 @@
 
         <button id="enable-webcam-btn" disabled>loading...</button>
 
-        <div style="position: relative">
+        <div style="position:relative;transform:scaleX(-1); text-align:center;">
             <video id="webcam" autoplay></video>
-            <canvas id="output-canvas" style="position:absolute;left:0;top:0;" width="1280" height="720"></canvas>
+            <canvas id="output-canvas" style="position:absolute;left:50%;top:0;transform:translateX(-50%)" width="1280" height="720"></canvas>
         </div>
 
         <div id="gesture-output"></div>
