@@ -13,8 +13,8 @@ const enableWebcamButton = <HTMLButtonElement>(
 let webcamRunning = false;
 
 let gestureRecognizer: GestureRecognizer;
-const videoWidth = "480px";
-const videoHeight = "360px";
+const videoWidth = "720px";
+const videoHeight = "540px";
 
 async function createGestureRecognizer() {
     const vision = await FilesetResolver.forVisionTasks("node_modules/@mediapipe/tasks-vision/wasm");
